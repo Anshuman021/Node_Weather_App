@@ -21,7 +21,7 @@ app.set('views',view_path)
 hbs.registerPartials(partials)
 
 app.get('/',(req,res)=>{
-    res.send('Welcome to the weather application ')
+    res.render('root')
 })
 
 app.get('/index',(req,res)=>{
