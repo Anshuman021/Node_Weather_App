@@ -1,7 +1,7 @@
 const request=require('postman-request')
 
 
-
+//CODE of GEOCODE FUNCTION 
 const geocode=(location,callback)=>{
 
     const url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+ location +'.json?access_token=pk.eyJ1IjoiYW5zaHVtYW4wMjEiLCJhIjoiY2twMTV6bHpiMGt5ejJwdGU0cHQ3bWN0cSJ9.EDouUyu64OugEN3-AbNr2g&limit=1'
