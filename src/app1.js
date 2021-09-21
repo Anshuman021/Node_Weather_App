@@ -4,6 +4,8 @@ const hbs=require('hbs')
 const geocode=require('./geocode')
 const forecast=require('./forecast')
 
+const port = process.env.PORT || 3000
+
 const app=express()
 
 //Telling the express about the templating engine of HBS
@@ -86,6 +88,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('server is running ..')
+app.listen(port,()=>{
+    console.log('server is running on '+port)
 })
