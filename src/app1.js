@@ -23,7 +23,9 @@ app.set('views',view_path)
 hbs.registerPartials(partials)
 
 app.get('/',(req,res)=>{
-    res.render('root')
+    res.render('root',{
+        name:'Anshuman'
+    })
 })
 
 app.get('/index',(req,res)=>{
