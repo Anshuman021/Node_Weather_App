@@ -1,5 +1,5 @@
 FROM node
-
+#creating my own directory insdie container
 WORKDIR /yourapp
 
 COPY ./package.json /yourapp/
