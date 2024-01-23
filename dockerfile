@@ -11,5 +11,5 @@ RUN mkdir ./src
 COPY ./src/ /yourapp/src/
 
 EXPOSE 3000
-
+#passing the commands to container
 CMD [ "node","./src/app1.js" ]
