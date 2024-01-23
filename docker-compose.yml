@@ -1,0 +1,10 @@
+services:
+  nodewebapp:
+    build: 
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - "9000:3000"
+    image: "node-app:v"
+    container_name: "nodeapp"
+
