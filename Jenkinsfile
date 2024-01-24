@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {label "agentdev"}
     stages{
         stage("FetchingCode"){
             steps{
