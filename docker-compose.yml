@@ -1,10 +1,9 @@
 services:
   nodewebapp:
-    build: 
-      context: ./
-      dockerfile: dockerfile
+    image: "anshumanhub/node-app:v"
+    container_name: "nodeapp"
     ports:
       - "9000:3000"
-    image: "node-app:v"
-    container_name: "nodeapp"
-
+    # build: 
+    #   context: ./
+    #   dockerfile: dockerfile
